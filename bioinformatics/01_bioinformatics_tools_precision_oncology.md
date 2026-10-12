@@ -1,11 +1,4 @@
-# 정밀종양학의 생물정보학 도구
-
-- 원제: Current Bioinformatics Tools in Precision Oncology
-- 저자: Wolde T, Bhardwaj V, Pandey V (칭화대학교)
-- 출처: *MedComm* 2025;6:e70243
-- 유형: 리뷰 논문(기존 연구를 모아 정리한 논문)
-
-개요
+Current Bioinformatics Tools in Precision Oncology 정리 
 
 정밀종양학은 모든 암 환자에게 같은 치료를 하지 않고, 환자 개개인의 유전자와 분자 특성에 맞춰 치료를 고르는 분야다. 이때 기준이 되는 것이 바이오마커다. 바이오마커는 질병의 존재, 진행 정도, 치료 반응을 알려주는 측정 가능한 생체 지표로, 특정 유전자 변이나 혈액 속 단백질 농도 등이 이에 해당한다.
 

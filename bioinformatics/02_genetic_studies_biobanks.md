@@ -1,11 +1,5 @@
-# 바이오뱅크 시대의 유전 연구 확장
+Expanding Scope of Genetic Studies in the Era of Biobanks 정리
 
-- 원제: Expanding Scope of Genetic Studies in the Era of Biobanks
-- 저자: Dutta D (미국 국립암연구소), Chatterjee N (존스홉킨스대학교)
-- 출처: *Human Molecular Genetics* (저자 원고, PMC 2026)
-- 유형: 리뷰 논문(기존 연구를 모아 정리한 논문)
-
-개요
 
 바이오뱅크는 많은 사람의 혈액 같은 생체 시료와 유전 정보를 건강 기록, 생활 습관, 가족력 등과 함께 모아둔 대규모 연구 자원이다. 이 논문은 바이오뱅크가 GWAS를 어떻게 키웠는지 정리한다.
 
