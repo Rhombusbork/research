@@ -12,51 +12,83 @@
 ## 블록별 핵심 식
 
 ### 블록 1 · 질량 보존과 청소율
-```
-C(t) = (Dose / V) · e^(−k·t),   k = CL / V
-반감기 t½ = 0.693 · V / CL
-AUC = Dose / CL
-```
-- V는 처음 농도와 반감기만 바꾼다. AUC에는 없다.
-- 치워지는 양의 속도 = CL × C
+
+$$
+C(t) = \frac{\text{Dose}}{V}\, e^{-kt}, \qquad k = \frac{CL}{V}
+$$
+
+$$
+t_{1/2} = \frac{0.693\, V}{CL}, \qquad AUC = \frac{\text{Dose}}{CL}
+$$
+
+- $V$는 처음 농도와 반감기만 바꾼다. $AUC$에는 없다.
+- 치워지는 양의 속도 $= CL \times C$
 
 ### 블록 2 · 반복 투여와 정상상태
-```
-평균 정상상태 농도 Css,avg = (Dose / τ) / CL        τ = 투여 간격
-정상상태 도달 ≈ 4~5 × t½   (용량과 무관)
-부하 용량 = 목표 농도 × V
-```
+
+$$
+C_{ss,\text{avg}} = \frac{\text{Dose} / \tau}{CL} \qquad (\tau = \text{투여 간격})
+$$
+
+$$
+\text{정상상태 도달} \approx 4\text{–}5 \times t_{1/2} \quad (\text{용량과 무관}), \qquad
+\text{부하 용량} = C_{\text{target}} \times V
+$$
 
 ### 블록 3 · 농도-효과 관계
-```
-D + R ⇌ DR,   Kd = koff / kon
-보존: Rtot = R + DR
-점유율 = C / (Kd + C)
-E = Emax · C / (EC50 + C)            (효과 ∝ 점유율이면 EC50 = Kd)
-E = Emax · C^n / (EC50^n + C^n)      (Hill 계수 n: 곡선의 가파름)
-```
+
+$$
+D + R \;\rightleftharpoons\; DR, \qquad K_d = \frac{k_{\text{off}}}{k_{\text{on}}}, \qquad R_{\text{tot}} = R + DR
+$$
+
+$$
+\text{점유율} = \frac{C}{K_d + C}
+$$
+
+$$
+E = \frac{E_{\max}\, C}{EC_{50} + C} \quad (\text{효과} \propto \text{점유율이면 } EC_{50} = K_d)
+$$
+
+$$
+E = \frac{E_{\max}\, C^{n}}{EC_{50}^{\,n} + C^{n}} \quad (\text{Hill 계수 } n\text{: 곡선의 가파름})
+$$
 
 ### 블록 4 · 시간 지연과 회전율 (간접 반응 모델 I)
-```
-dR/dt = kin · (1 − C / (IC50 + C)) − kout · R
-기저 수준 R0 = kin / kout
-매개체 반감기 = 0.693 / kout
-```
-- 효과의 시간표는 약의 반감기가 아니라 kout이 정한다.
+
+$$
+\frac{dR}{dt} = k_{\text{in}} \left(1 - \frac{C}{IC_{50} + C}\right) - k_{\text{out}}\, R
+$$
+
+$$
+R_0 = \frac{k_{\text{in}}}{k_{\text{out}}}, \qquad t_{1/2,\text{매개체}} = \frac{0.693}{k_{\text{out}}}
+$$
+
+- 효과의 시간표는 약의 반감기가 아니라 $k_{\text{out}}$이 정한다.
 
 ### 블록 5 · 변동성의 구조 (혼합효과 모델)
-```
-CLi = CLpop · e^(ηi),        ηi ~ N(0, ω²)   사람 사이의 차이
-Cobs = Cpred · e^(ε),        ε ~ N(0, σ²)    측정 잡음
-```
+
+$$
+CL_i = CL_{\text{pop}}\, e^{\eta_i}, \qquad \eta_i \sim \mathcal{N}(0, \omega^2) \quad (\text{사람 사이의 차이})
+$$
+
+$$
+C_{\text{obs}} = C_{\text{pred}}\, e^{\varepsilon}, \qquad \varepsilon \sim \mathcal{N}(0, \sigma^2) \quad (\text{측정 잡음})
+$$
 
 ### 블록 6 · 모델에서 결정으로
-```
-CLi = CLpop · (WT / 70)^0.75                 체중의 0.75제곱 법칙
-용량 = 목표 AUC × CLi
-1회 용량 = 목표 Css,avg × CLi × τ
-체중당 용량: AUC ∝ WT^0.25,   고정 용량: AUC ∝ WT^−0.75
-```
+
+$$
+CL_i = CL_{\text{pop}} \left(\frac{WT}{70}\right)^{0.75} \quad (\text{체중의 0.75제곱 법칙})
+$$
+
+$$
+\text{용량} = AUC_{\text{target}} \times CL_i, \qquad
+\text{1회 용량} = C_{ss,\text{target}} \times CL_i \times \tau
+$$
+
+$$
+\text{체중당 용량: } AUC \propto WT^{0.25}, \qquad \text{고정 용량: } AUC \propto WT^{-0.75}
+$$
 
 ## 틀렸던 예측과 그 이유
 
