@@ -4,4 +4,4 @@
 
 | 분야 | 파일 | 원리 수 |
 |---|---|---|
-| 정량약리학 | [pharmacometrics.md](pharmacometrics.md) | 0 |
+| 정량약리학 | [pharmacometrics.md](pharmacometrics.md) | 6 |
