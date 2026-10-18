@@ -15,3 +15,4 @@
 
 | # | 논문 | 분야 | 진행 |
 |---|---|---|---|
+| 1 | 정량약리학 1시간 핵심 (원리 6개) | pharmacometrics | 완료, 복습 3곳 남음 · [pharmacometrics_1h/](pharmacometrics_1h/) |
